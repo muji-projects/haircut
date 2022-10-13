@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100;1,300&display=swap');
+
 html {
     --black: #000;
     --white: #fff;
     --darkgray: #191c24;
     --red: #eb1616;
+    --light-gray: rgb(117, 121, 126);
 }
 
 * {
@@ -11,13 +14,8 @@ html {
     padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Anton', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Barre de navigation*/
@@ -46,7 +44,6 @@ h6 {
 .navbar .links a {
     text-decoration: none;
     color: var(--white);
-    font-family: 'Anton', sans-serif;
 }
 
 #pg {
@@ -54,7 +51,6 @@ h6 {
     color: var(--white);
     border: none;
     text-align: center;
-    font-family: 'Anton', sans-serif;
     font-size: medium;
 }
 
@@ -117,6 +113,10 @@ h6 {
     justify-content: space-between;
 }
 
+i {
+    color: var(--red);
+}
+
 .w-100 {
     width: 100%;
 }
@@ -127,31 +127,44 @@ h6 {
 
 /* About us */
 .aboutus {
+    display: flex;
     padding-top: 3rem;
     width: 100%;
 }
 
-.about-text {}
+.aboutus .about-image {
+    flex-grow: 5;
+}
+
+.aboutus .about-text {
+    flex-grow: 6;
+    padding: 0 1.5rem;
+}
+
+.aboutus .about-image img {
+    width: 100%;
+}
 
 .about-text,
 h1,
 h2,
 h3 {
     color: var(--white);
-    font-family: 'Anton', sans-serif;
 }
 
 #about {
     color: var(--red);
     padding: 5px;
     background: #191c24;
-
+    width: 6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .about-text p {
-    color: var(--darkgray);
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--light-gray);
+    padding: 5px 0;
+    margin-bottom: 1rem;
 }
 
 .sc {
@@ -163,14 +176,53 @@ h3 {
     background-color: #191c24;
 }
 
+.provide #services {
+    width: 6rem;
+    margin: 1rem auto;
+}
+
 .services {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services .services-from {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    width: 30%;
+}
+
+.services-from__img {
+    width: 35%;
+}
+
+.services-from__img img {
+    width: 100%;
+}
+
+.services-from__text {
+    /* width: 75%; */
+    padding: 0rem 1rem;
+}
+
+.services-from .services-from__text>* {
+    margin-bottom: 1rem;
+}
+
+.services-from__text p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--light-gray);
+    /* font-family: Helvetica, sans-serif; */
 }
 
 .service {
     color: var(--red);
     background-color: #191c24;
-
 }
 
 .aboutus {
@@ -178,12 +230,9 @@ h3 {
     width: 100%;
 }
 
-.about-text {}
-
 .about-text h2,
 h3 {
     color: var(--white);
-    font-family: 'Anton', sans-serif;
 }
 
 #about {
@@ -191,12 +240,6 @@ h3 {
     padding: 5px;
     background: #191c24;
 
-}
-
-.about-text p {
-    color: var(--darkgray);
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* provide */
@@ -217,18 +260,11 @@ h3 {
     text-align: center;
     padding-bottom: 1rem;
     color: var(--white);
-    font-family: 'Anton', sans-serif;
 }
 
 /* Services */
 .services-from {
     background-color: var(--darkgray);
-    margin-bottom: 2rem;
-    padding: 2rem;
-}
-
-.services p {
-    color: var(--white);
 }
 
 #from {
