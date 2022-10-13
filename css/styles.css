@@ -1,0 +1,236 @@
+html {
+    --black: #000;
+    --white: #fff;
+    --darkgray: #191c24;
+    --red: #eb1616;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Anton', sans-serif;
+}
+
+/*Barre de navigation*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    background-color: var(--darkgray);
+}
+
+.navbar .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 5;
+    gap: 1rem;
+}
+
+/* Section Logo*/
+.navbar .logo {
+    flex-grow: 1;
+}
+
+/* Section Links*/
+.navbar .links a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Anton', sans-serif;
+}
+
+#pg {
+    background: none;
+    color: var(--white);
+    border: none;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: medium;
+}
+
+.navbar .links a:first-child {
+    color: var(--red);
+}
+
+/* Section Links*/
+.navbar .appointment {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.navbar .appointment button {
+    background-color: #eb1616;
+    color: var(--white);
+    padding: 10px 20px 10px 10px;
+    border: none;
+}
+
+/*Carousel*/
+.container-fluid {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.carousel {
+    width: 100vw;
+    height: 700px;
+}
+
+.carousel__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/carousel-1.jpg");
+    height: 100%;
+}
+
+.carousel__img .text__title {
+    font-size: 3rem;
+}
+
+/* container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.d-flex {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.o-auto {
+    margin: 0 auto;
+}
+
+/* About us */
+.aboutus {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.about-text {}
+
+.about-text,
+h1,
+h2,
+h3 {
+    color: var(--white);
+    font-family: 'Anton', sans-serif;
+}
+
+#about {
+    color: var(--red);
+    padding: 5px;
+    background: #191c24;
+
+}
+
+.about-text p {
+    color: var(--darkgray);
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sc {
+    display: flex;
+}
+
+#about {
+    color: var(--red);
+    background-color: #191c24;
+}
+
+.services {
+    text-align: center;
+}
+
+.service {
+    color: var(--red);
+    background-color: #191c24;
+
+}
+
+.aboutus {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.about-text {}
+
+.about-text h2,
+h3 {
+    color: var(--white);
+    font-family: 'Anton', sans-serif;
+}
+
+#about {
+    color: var(--red);
+    padding: 5px;
+    background: #191c24;
+
+}
+
+.about-text p {
+    color: var(--darkgray);
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* provide */
+.provide {
+    margin-top: 3rem;
+}
+
+#services {
+    color: var(--red);
+    text-align: center;
+    padding-top: 3rem;
+    padding: 5px;
+    background: #191c24;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#provide {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--white);
+    font-family: 'Anton', sans-serif;
+}
+
+/* Services */
+.services-from {
+    background-color: var(--darkgray);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.services p {
+    color: var(--white);
+}
+
+#from {
+    color: var(--red);
+}
