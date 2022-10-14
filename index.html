@@ -8,86 +8,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/general.css">
     <title>Haircutt</title>
 </head>
+
+
 <body>
     <!-- Navbar-->
-    <div class="navbar">
+    <header>
         <div class="logo">
             <img src="img/logo.png" alt="logo">
         </div>
 
-        <div class="links">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICE</a>
-            <select name="" id="pg">
-                <option value="">PAGE</option>
-                <option value="">Next Page</option>
-            </select>
-            <a href="#">CONTACT</a>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICE</a></li>
+                <li>
+                    <select name="" id="pg" title="navbar select">
+                        <option value="">PAGE</option>
+                        <option value="">Next</option>
+                    </select>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+                <li class="appointment">
+                    <button type="button">Appointment &#8594;</button>
+                </li>
+            </ul>
+        </nav>
 
-        <div class="appointment">
-            <button type="button">Appointment &#8594;</button>
-
-        </div>
-    </div>
+    </header>
 
     <!-- Carousel-->
-    <div class="container-fluid">
-        <div class="carousel">
-            <div class="carousel__img">
-                <div class="carousel__text">
-                    <h1 class="text__title">WE WILL KEEP YOU AN <br> AWESOME LOOK</h1>
-                    <h3 class="c-image"><i class="fa-sharp fa-solid fa-location-dot"></i> 123 STREET, NEW YORK, USA</h3>
-                    <h3 class="c-image"> <i class="fa-solid fa-phone"></i> +337 583 46739</h3>
-                </div>
+    <section class="carousel">
+        <div class="carousel__img">
+            <div class="carousel__text">
+                <h1 class="text__title">WE WILL KEEP YOU AN <br> AWESOME LOOK</h1>
+                <h3 class="c-image"><i class="fa-sharp fa-solid fa-location-dot"></i> 123 STREET, NEW YORK, USA</h3>
+                <h3 class="c-image"> <i class="fa-solid fa-phone"></i> +337 583 46739</h3>
             </div>
         </div>
+    </section>
 
 
-        <div class="container">
-            <!-- About US-->
-            <div class="aboutus">
-                <div class="about-image">
-                    <!-- <h1>25 YEARS <br> EXPERIENCE</h1> -->
-                    <img src="img/about.jpg" alt="image">
-                </div>
+    <main>
+        <!-- About US-->
+        <section class="aboutus">
+            <div class="about-image">
+                <!-- <h1>25 YEARS <br> EXPERIENCE</h1> -->
+                <img src="img/about.jpg" alt="image">
+            </div>
 
-                <div class="about-text">
-                    <p id="about">About Us</p>
-                    <div>
-                        <h1>MORE THEN JUST A HAIRCUT. LEARN MORE ABOUT US!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
-                            magnam non cumque adipisci quisquam vero, quis debitis rerum similique</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam distinctio
-                            magnam non cumque adipisci quisquam vero</p>
-                        <div class="sc">
-                            <div class="since">
-                                <h2>SINCE 1990</h2>
-                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam
-                                    distinctio</P>
-                            </div>
-                            <div class="client">
-                                <h2>1000+ CLIENTS</h2>
-                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab quibusdam
-                                    distinctio</P>
-                            </div>
-
+            <div class="about-text">
+                <p id="about" class="section__title">About Us</p>
+                <div>
+                    <h1>MORE THEN JUST A HAIRCUT. LEARN MORE ABOUT US!</h1>
+                    <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab
+                        quibusdam distinctio
+                        magnam non cumque adipisci quisquam vero, quis debitis rerum similique</p>
+                    <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab
+                        quibusdam distinctio
+                        magnam non cumque adipisci quisquam vero</p>
+                    <div class="sc">
+                        <div class="since">
+                            <h2>SINCE 1990</h2>
+                            <P class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Excepturi ab quibusdam
+                                distinctio</P>
                         </div>
+                        <div class="client">
+                            <h2>1000+ CLIENTS</h2>
+                            <P class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Excepturi ab quibusdam
+                                distinctio</P>
+                        </div>
+
                     </div>
                 </div>
             </div>
+        </section>
 
 
-            <div class="provide">
-                <p id="services">Services</p>
-                <h1 id="provide">WHAT WE PROVIDE</h1>
-            </div>
-
+        <section class="services-section">
+            <p id="services" class="section__title">Services</p>
+            <h1 id="provide">WHAT WE PROVIDE</h1>
 
             <div class="services">
+
                 <div class="services-from">
                     <div class="services-from__img">
                         <img src="img/haircut.png" alt="logo" style="background-color: #000;">
@@ -102,7 +110,7 @@
 
                 <div class="services-from">
                     <div class="services-from__img">
-                        <img src="img/beard-trim.png" alt="logo" style="background-color: #000;">
+                        <img src="img/beard-trim.png" alt="logo">
                     </div>
                     <div class="services-from__text">
                         <h2>BEARD TRIM</h2>
@@ -114,7 +122,7 @@
 
                 <div class="services-from">
                     <div class="services-from__img">
-                        <img src="img/mans-shave.png" alt="logo" style="background-color: #000;">
+                        <img src="img/mans-shave.png" alt="logo">
                     </div>
                     <div class="services-from__text">
                         <h2>MANS SHAVE</h2>
@@ -126,7 +134,7 @@
 
                 <div class="services-from">
                     <div class="services-from__img">
-                        <img src="img/hair-dyeing.png" alt="logo" style="background-color: #000;">
+                        <img src="img/hair-dyeing.png" alt="logo">
                     </div>
                     <div class="services-from__text">
 
@@ -139,7 +147,7 @@
 
                 <div class="services-from">
                     <div class="services-from__img">
-                        <img src="img/mustache.png" alt="logo" style="background-color: #000;">
+                        <img src="img/mustache.png" alt="logo">
                     </div>
                     <div class="services-from__text">
                         <h2>MUSTACHE</h2>
@@ -151,7 +159,7 @@
 
                 <div class="services-from">
                     <div class="services-from__img">
-                        <img src="img/stacking.png" alt="logo" style="background-color: #000;">
+                        <img src="img/stacking.png" alt="logo">
                     </div>
                     <div class="services-from__text">
                         <h2>STACKING</h2>
@@ -161,21 +169,156 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="price d-flex">
-                <div class="price-text">
+        <section class="image-with-content">
+            <div class="text-section-container">
 
+                <div class="text-section">
+                    <p class="section__title" id="price-and-plan">
+                        Price & Plan
+                    </p>
+                    <h1>CHECK OUT OUR BARBER SERVICES AND PRICES</h1>
+
+                    <ul>
+                        <li>
+                            <h4>HAIRCUT</h4>
+                            <p>$29.00</p>
+                        </li>
+                        <li>
+                            <h4>BEARD TRIM</h4>
+                            <p>$35.00</p>
+                        </li>
+                        <li>
+                            <h4>MANS SHAVE</h4>
+                            <p>$23.00</p>
+                        </li>
+                        <li>
+                            <h4>HAIR DYEING</h4>
+                            <p>$19.00</p>
+                        </li>
+                        <li>
+                            <h4>MUSTACHE</h4>
+                            <p>$15.00</p>
+                        </li>
+                        <li>
+                            <h4>STACKING</h4>
+                            <p>$39.00</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="price-image">
-                    <img src="img/price.jpg" alt="">
-                </div>
-
             </div>
-        </div>
+            <div class="image-section">
+                <img src="img/price.jpg" alt="">
+            </div>
+        </section>
 
-        <!-- SCRIPT -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/fontawesome.js"></script>
-        <script src="https://kit.fontawesome.com/a9b8a8cd22.js" crossorigin="anonymous"></script>
+        <section class="our-barbers">
+            <p class="section__title center">
+                Our Barbers
+            </p>
+            <h1 class="center">MEET OUR BARBER</h1>
+
+            <div class="barbers">
+                <div class="barber">
+                    <div class="barber-img">
+                        <img src="img/team-1.jpg" alt="barber image 1">
+                    </div>
+                    <div class="barber-text">
+                        <h3>BARBER NAME</h3>
+                        <p class="red">Designation</p>
+                    </div>
+                </div>
+                <div class="barber">
+                    <div class="barber-img">
+                        <img src="img/team-2.jpg" alt="barber image 2">
+                    </div>
+                    <div class="barber-text">
+                        <h3>BARBER NAME</h3>
+                        <p class="red">Designation</p>
+                    </div>
+                </div>
+                <div class="barber">
+                    <div class="barber-img">
+                        <img src="img/team-3.jpg" alt="barber image 3">
+                    </div>
+                    <div class="barber-text">
+                        <h3>BARBER NAME</h3>
+                        <p class="red">Designation</p>
+                    </div>
+                </div>
+                <div class="barber">
+                    <div class="barber-img">
+                        <img src="img/team-4.jpg" alt="barber image 4">
+                    </div>
+                    <div class="barber-text">
+                        <h3>BARBER NAME</h3>
+                        <p class="red">Designation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-with-content working-hours">
+            <div class="image-section">
+                <img src="img/open.jpg" alt="section image">
+            </div>
+            <div class="text-section-container">
+
+                <div class="text-section">
+                    <p class="section__title" id="price-and-plan">
+                        Working Hours
+                    </p>
+                    <h1>PROFESSIONAL BARBERS ARE WAITING FOR YOU</h1>
+
+                    <ul>
+                        <li>
+                            <h4>MONDAY</h4>
+                            <p>09 AM-09 PM</p>
+                        </li>
+                        <li>
+                            <h4>TUESDAY</h4>
+                            <p>09 AM-09 PM</p>
+                        </li>
+                        <li>
+                            <h4>WEDNESDAY</h4>
+                            <p>09 AM-09 PM</p>
+                        </li>
+                        <li>
+                            <h4>THURSDAY</h4>
+                            <p>09 AM-09 PM</p>
+                        </li>
+                        <li>
+                            <h4>FRIDAY</h4>
+                            <p>09 AM-09 PM</p>
+                        </li>
+                        <li>
+                            <h4>SAT/SUN</h4>
+                            <p class="red">CLOSED</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial center">
+            <p class="section__title center">
+                Testimonial
+            </p>
+            <h1 class="center">WHAT OUR CLIENTS SAY</h1>
+            <h3>CLIENT NAME</h3>
+            <p class="red">profession</p>
+            <p>
+                clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo
+                labore sed sed. Magna ut diam sit et amet stet eos sed clita erat
+                magna elitr erat sit sit erat at rebum justo sea clita.
+            </p>
+        </section>
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="https://kit.fontawesome.com/a9b8a8cd22.js" crossorigin="anonymous"></script>
 </body>
 </html>
