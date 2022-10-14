@@ -336,3 +336,14 @@ h3 {
 .testimonial p {
     margin-bottom: 1rem;
 }
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--darkgray);
+    padding-top: 5rem;
+}
+
+footer i {
+    background-color: var(--black);
+}
