@@ -22,16 +22,16 @@
 
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICE</a></li>
+                <li><a href="index.html" class="red">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
                 <li>
                     <select name="" id="pg" title="navbar select">
                         <option value="">PAGE</option>
                         <option value="">Next</option>
                     </select>
                 </li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
                 <li class="appointment">
                     <button type="button">Appointment &#8594;</button>
                 </li>
@@ -56,13 +56,15 @@
         <!-- About US-->
         <section class="aboutus">
             <div class="about-image">
-                <!-- <h1>25 YEARS <br> EXPERIENCE</h1> -->
+                <h1>
+                    <span class="red">25 YEARS</span> <br> EXPERIENCE
+                </h1>
                 <img src="img/about.jpg" alt="image">
             </div>
 
             <div class="about-text">
                 <p id="about" class="section__title">About Us</p>
-                <div>
+                <div class="about-us-text">
                     <h1>MORE THEN JUST A HAIRCUT. LEARN MORE ABOUT US!</h1>
                     <p class="about-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab
                         quibusdam distinctio
@@ -98,7 +100,7 @@
 
                 <div class="services-from">
                     <div class="services-from__img">
-                        <img src="img/haircut.png" alt="logo" style="background-color: #000;">
+                        <img src="img/haircut.png" alt="logo">
                     </div>
                     <div class="services-from__text">
                         <h2>HAIRCUT</h2>
@@ -317,26 +319,68 @@
     </main>
 
     <footer>
-        <div class="get-in-touch">
-            <h3>GET IN TOUCH</h3>
-            <p>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                123 Street, New York, USA.
-            </p>
-            <p>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                +012 345 67890
-            </p>
-            <p>
-                <i class="fa fa-envelope-open" aria-hidden="true"></i>
-                info@example.com
-            </p>
+        <div class="footer-info">
+
+            <div class="get-in-touch">
+                <h3>GET IN TOUCH</h3>
+                <div class="contact-info">
+                    <div class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <p>123 Street, New York, USA</p>
+                </div>
+                <div class="contact-info">
+                    <div class="icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        +012 345 67890
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <div class="icon">
+                        <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        info@example.com
+                    </p>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>> About Us</li>
+                    <li>> Contact Us</li>
+                    <li>> Our Services</li>
+                    <li>> Terms & Condition</li>
+                    <li>> Support</li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <div class="input">
+                    <input type="text" placeholder="Your email">
+                    <button>SignUp</button>
+                </div>
+                <div class="social__links">
+                    <div class="link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="quick-links">
-            <h3>QUICK LINKS</h3>
-        </div>
-        <div class="newsletter">
-            <h3>NEWSLETTER</h3>
+        <div class="copyright">
+            <p>&#169; <u>Your site name</u>. All Right Reserved.</p>
+            <p>Designed by <u>HTML Codex</u></p>
         </div>
     </footer>
 

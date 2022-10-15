@@ -32,7 +32,7 @@ ul li {
 }
 
 section {
-    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /*Barre de navigation*/
@@ -72,10 +72,6 @@ header nav a {
     font-size: medium;
 }
 
-nav ul li:first-child a {
-    color: var(--red);
-}
-
 /* Section Links*/
 nav ul li.appointment {
     text-align: center;
@@ -91,7 +87,7 @@ nav ul li.appointment button {
 /*Carousel*/
 
 .carousel {
-    width: 100vw;
+    /* width: 100%; */
     height: 700px;
 }
 
@@ -142,20 +138,41 @@ i {
 .aboutus {
     display: flex;
     padding-top: 3rem;
-    width: 100%;
-}
-
-.aboutus .about-image {
-    flex-grow: 5;
 }
 
 .aboutus .about-text {
-    flex-grow: 6;
     padding: 0 1.5rem;
+    width: 70%;
+}
+
+.aboutus .about-us-text {
+    width: 100%;
+}
+
+.aboutus .about-image h1 {
+    background-color: var(--darkgray);
+    padding: 2.5rem 1rem;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    width: 50%;
+}
+
+.aboutus .about-image {
+    position: relative;
+    width: 50%;
 }
 
 .aboutus .about-image img {
-    width: 100%;
+    width: 80%;
+    position: absolute;
+    display: block;
+    right: 0px;
+}
+
+.aboutus .about-image img::before {
+    content: "25 Years Experience";
+    color: red;
 }
 
 .about-text-p {
@@ -298,10 +315,6 @@ h3 {
     background-color: var(--black);
 }
 
-.image-with-content .image-section {
-    /* flex-grow: 1; */
-}
-
 .image-with-content .image-section img {
     width: 100%;
 }
@@ -338,12 +351,105 @@ h3 {
 }
 
 footer {
+    background-color: var(--darkgray);
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
+
+.footer-info {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--darkgray);
     padding-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+footer .get-in-touch .contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 footer i {
+    text-align: center !important;
+}
+
+
+footer .get-in-touch .contact-info .icon {
+    display: flex;
+    margin-right: 1rem;
     background-color: var(--black);
+    width: 2.2rem;
+    height: 2.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    margin-bottom: 2rem;
+}
+
+footer p {
+    padding: 0.4rem 0;
+}
+
+footer ul li {
+    padding: 0.25rem 0;
+}
+
+footer .newsletter .input {
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    font-size: 1.1rem;
+    width: 350px;
+    margin-bottom: 1rem;
+}
+
+footer .newsletter input {
+    border: none;
+    outline: none;
+    background: none;
+    flex: 3;
+}
+
+footer .newsletter button {
+    background-color: var(--red);
+    border: none;
+    height: 2rem;
+    flex: 1;
+    color: white;
+    width: 80px;
+}
+
+footer .newsletter button:hover {
+    cursor: pointer;
+}
+
+footer .newsletter .social__links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+footer .newsletter .social__links .link {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+footer .newsletter .social__links i {
+    display: block;
+}
+
+footer .copyright {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 2rem;
 }
